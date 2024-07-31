@@ -77,7 +77,10 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage :{
-        hero: 'url(/hero/hero-bg.png)'
+        hero: 'url(/assets/hero/hero-bg.png)',
+        hero_shape: 'url(/assets/hero/shape-1.svg)',
+        hero_shape2_light: 'url(/assets/hero/shape-2-light.svg)',
+        hero_shape2_dark: 'url(/assets/hero/shape-2-dark.svg)',
       }
     },
   },
