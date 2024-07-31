@@ -132,8 +132,8 @@ const skillData = [
 ]
 
 
-const About = () => {
-    const getData = (arr, title) =>{
+const About:React.FC = () => {
+    const getData = (arr:Array<string | any>, title:string) =>{
         return arr.find((item) => item.title === title)
     }
     
