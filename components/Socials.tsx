@@ -1,6 +1,7 @@
 'use client'
 import { Divide } from 'lucide-react'
 import Link from 'next/link'
+import React from 'react';
 import {
   RiLinkedinFill,
    RiGithubFill,
@@ -9,7 +10,12 @@ import {
      RiTwitterXFill
     } from 'react-icons/ri'
 
-const Socials = () => {
+    interface styles{
+      containerStyles ?: string;
+      iconStyles: string;
+  }
+
+const Socials:React.FC<styles> = ({containerStyles, iconStyles}) => {
   const icons = [
     {
       path: '/',
@@ -33,10 +39,10 @@ const Socials = () => {
     },
   ]
   return (
-    <div className='flex gap-x-6 mx-auto xl:mx-0'>
+    <div className={`${containerStyles}`}>
       {icons.map((icon,index)=>{
         return <Link href={icon.path} key={index}>
-        <div className='text-foreground text-[22px] hover:text-primary transition-all'>{icon.name}</div>
+        <div className={`${iconStyles}`}>{icon.name}</div>
         </Link>
 
       })}

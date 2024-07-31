@@ -11,18 +11,24 @@ const links = [
     { path: '/contact', name: 'contact' }
 ]
 
-const Nav: React.FC = () => {
+interface styles{
+    containerStyles ?: string;
+    linkStyles ?: string;
+    underlineStyles ?: string
+}
+
+const Nav: React.FC<styles> = ({containerStyles,linkStyles,underlineStyles}) => {
     const path = usePathname()
     return (
-        <nav className='hidden xl:flex gap-x-8 items-center'>{
+        <nav className={`${containerStyles}`}>{
             links.map((link, index) => {
                 return (
                     <Link
                         href={link.path}
                         key={index}
-                        className=' capitalize relative hover:text-primary transition-all'>
+                        className={`capitalize ${linkStyles}`}>
                             {link.path === path && (
-                                <motion.span initial={{y: '-100%'}} animate={{y:0}} transition={{type:'tween'}} layoutId='underline' className='absolute left-0 top-full h-[2px] bg-primary w-full'/>
+                                <motion.span initial={{y: '-100%'}} animate={{y:0}} transition={{type:'tween'}} layoutId='underline' className={`${underlineStyles}`}/>
                             )}
                         {link.name}
                     </Link>
