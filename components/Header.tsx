@@ -22,7 +22,7 @@ const Header:React.FC = () => {
   })
   
   return (
-    <header className={` ${header ? 'py-4 bg-white shadow-lg dark:bg-accent':'py-6 bg-transparent'} sticky top-0 z-30 transition-all ${pathName === '/' && 'bg-[#fef9f5] dark:bg-inherit'}` }>
+    <header className={` ${header ? 'py-4 bg-white shadow-lg dark:bg-secondary':'py-6 bg-transparent'} sticky top-0 z-30 transition-all dark:shadow-lg` }>
       <div className=' container'>
         <div className='flex justify-between top-0 items-center'>
           <Logo />
