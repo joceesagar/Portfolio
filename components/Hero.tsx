@@ -15,6 +15,7 @@ import Badge from "./Badge"
 import Socials from "./Socials"
 import React from "react"
 
+
 const Hero = () => {
     return (
         <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
@@ -42,6 +43,7 @@ const Hero = () => {
                         iconStyles='text-foreground text-[22px] hover:text-primary transition-all'
                         />
                     </div>
+                    
                     {/* image */}
                     <div className="hidden xl:flex relative">
                         {/* badge1 */}
