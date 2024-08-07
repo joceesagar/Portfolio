@@ -89,7 +89,9 @@ const config = {
         dots_light: 'url(/assets/dots-light.svg)',
         dots_dark: 'url(/assets/dots-dark.svg)',
         work_project_bg_light: 'url(/assets/work/project-bg-light.png)',
-        work_project_bg_dark: 'url(/assets/work/project-bg-dark.png)'
+        work_project_bg_dark: 'url(/assets/work/project-bg-dark.png)',
+        contact_illustration_light: 'url(/assets/contact/illustration-light.svg)',
+        contact_illustration_dark: 'url(/assets/contact/illustration-dark.svg)'
       }
     },
   },
