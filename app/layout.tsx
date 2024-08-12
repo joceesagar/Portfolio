@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner"
 
 //components
 import Header from "../components/Header"
@@ -28,6 +29,7 @@ export default function RootLayout({
           <ScrollProgressBar/>
         <Header/>
         {children}
+        <Toaster position="top-right" richColors/>
         <Footer/>
         </ThemeProvider>
         </body>
